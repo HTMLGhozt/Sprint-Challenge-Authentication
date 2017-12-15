@@ -8,9 +8,7 @@ const createUser = (req, res) => {
 
   newUser
     .save()
-    .then((nUser) => {
-      res.json(nUser)
-    })
+    .then(nUser => res.json(nUser))
     .catch(err => res.status(500).json(err));
 };
 

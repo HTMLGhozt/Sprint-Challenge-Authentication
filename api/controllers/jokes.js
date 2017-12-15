@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 
 const getAllJokes = (req, res) => {
+  console.log(req.decoded);
   if (req.decoded) {
     fetch(
       'https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_ten'
